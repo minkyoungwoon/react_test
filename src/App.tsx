@@ -1,7 +1,10 @@
 import React from 'react';
+import { persistStore } from "redux-persist";
+import { store } from "c:/spring/coconut_fe/src/redux/store"
 import logo from './logo.svg';
 import './App.css';
 
+const persistor = persistStore(store);
 function App() {
   return (
     <div className="App">
